@@ -44,6 +44,7 @@
 		"vite": "^3.0.0",
 		"vitepress": "^1.0.0-alpha.4",
 		"vue": "^3.2.37",
+		"vue-global-api": "^0.4.1",
 		"vue-router": "^4.1.3",
 		"vue-tsc": "^0.38.4"
 	}

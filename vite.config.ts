@@ -11,7 +11,7 @@ export default defineConfig({
   plugins: [
     vue(),
     Unocss({
-      transformers: [transformerDirective()]
+      transformers: [transformerDirective()],
     }),
     AutoImport({
       imports: [
@@ -23,19 +23,20 @@ export default defineConfig({
             "useDialog",
             "useMessage",
             "useNotification",
-            "useLoadingBar"
-          ]
-        }
+            "useLoadingBar",
+          ],
+        },
       ],
-      dts: "src/auto-import.d.ts"
+      dts: "src/auto-import.d.ts",
     }),
     Components({
-      resolvers: [NaiveUiResolver()]
-    })
+      resolvers: [NaiveUiResolver()],
+      dts: "src/components.d.ts",
+    }),
   ],
   resolve: {
     alias: {
-      "@": "/src"
-    }
-  }
+      "@": "/src",
+    },
+  },
 });

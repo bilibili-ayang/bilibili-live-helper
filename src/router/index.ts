@@ -5,38 +5,38 @@ export const routes = [
   {
     path: "/",
     name: "barrage",
-    component: BarrageHelper
+    component: BarrageHelper,
   },
   {
     path: "/settings",
     name: "settings",
-    component: () => import("@/views/helper-settings/index.vue")
+    component: () => import("@/views/helper-settings/index.vue"),
   },
   {
     path: "/fans",
     name: "fans",
-    component: () => import("@/views/fans-helper/index.vue")
+    component: () => import("@/views/fans-helper/index.vue"),
   },
   {
     path: "/music",
     name: "music",
-    component: () => import("@/views/music-helper/index.vue")
+    component: () => import("@/views/music-helper/index.vue"),
   },
   {
     path: "/prompt",
     name: "prompt",
-    component: () => import("@/views/prompt-helper/index.vue")
+    component: () => import("@/views/prompt-helper/index.vue"),
   },
   {
     path: "/clock",
     name: "clock",
-    component: () => import("@/views/clock-helper/index.vue")
-  }
+    component: () => import("@/views/clock-helper/index.vue"),
+  },
 ];
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
-  routes
+  routes,
 });
 
 export default router;
